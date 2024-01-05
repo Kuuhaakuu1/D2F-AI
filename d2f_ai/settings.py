@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',    
-    'graphene_django',
+    'rest_framework',
     'imageProcessing',
     'django.contrib.messages',
     'django.contrib.staticfiles',
