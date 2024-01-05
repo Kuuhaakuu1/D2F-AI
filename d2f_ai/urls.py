@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from graphene_django.views import GraphQLView
-from imageProcessing.schema import Query
+from imageProcessing.views import GetDataFromAngular
+
 
 urlpatterns = [
-    path('graphql/', GraphQLView.as_view(graphiql=True, schema=Query    )),
-    # other urlpatterns...
+    path('get_data_from_angular/', GetDataFromAngular.as_view(), name='get_data_from_angular'),
 ]
+
