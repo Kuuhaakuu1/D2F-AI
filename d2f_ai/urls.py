@@ -21,5 +21,6 @@ from imageProcessing.views import GetDataFromAngular
 
 urlpatterns = [
     path('get_data_from_angular/', GetDataFromAngular.as_view(), name='get_data_from_angular'),
+    path('get_lar/', GetDataFromAngular.as_view(), name='get_data_from_angular'),
 ]
 
