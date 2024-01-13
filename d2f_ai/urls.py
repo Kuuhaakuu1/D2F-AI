@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from imageProcessing.views import GetDataFromAngular
+from imageProcessing.views import UploadFile
 
 
 urlpatterns = [
-    path('get_data_from_angular/', GetDataFromAngular.as_view(), name='get_data_from_angular'),
+    path('upload_file/', UploadFile.as_view(), name='upload_file'),
 ]
-
